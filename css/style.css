@@ -326,6 +326,7 @@ footer{
     }
     .content{
         display:block;
+        background-image: url("../image/Background.jpg");
     }
     .section-box{
         width:100%;
