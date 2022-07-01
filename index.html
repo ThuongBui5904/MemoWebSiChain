@@ -11,17 +11,17 @@
     <script src="css/bootstrap/js/bootstrap.min.js"></script>
     <script src="js/fixed.js"></script>
     <script src="js/animation.js"></script>
-    <script src="js/clickToLink.js"></script>
+    <script src="js/clickToLink.js"></script>    
+    <script src="js/showMenu.js"></script>
     <script>
         var myCarousel = document.querySelector('#myCarousel')
         var carousel = new bootstrap.Carousel(myCarousel, {
             interval: 1500,
             wrap: false
         })
-    </script>
+    </script>    
 </head>
 <body>
-
     <header>
         <nav>
             <div class="logo">
@@ -29,6 +29,7 @@
                 <h1>SiChain</h1>
             </div>
             <div class="categories">
+                <img class="menu-icon" src="image/icon/menu.png">
                 <ul>
                     <a href="#home"><li>Home</li></a>
                     <a href="#about"><li>About</li></a>
@@ -89,11 +90,11 @@
             </button>
         </div>
     </div>
-    <!--
-    <div class="content"><-- Phần Home--
+    <div class="content"><!-- Phần Home-->
         <div class="home">
             <div class="home-box">
                 <h2 class="title">Nơi nào cần bảo toàn dữ liệu, ở đó cần có Blockchain</h2>
+                <img src="image/H4.jpg">
                 <p class="description"> Blockchain - Vượt ngoài ứng dụng tạo các đồng tiền số, blockchain 
                     là công nghệ lưu trữ và bảo mật dữ liệu hàng đầu có nhiều ứng dụng trong quản trị doanh nghiệp, 
                     từ sản xuất, chuỗi cung ứng, kế toán, nhân lực … cho đến hệ thống ERP toàn diện. 
@@ -101,6 +102,7 @@
             </div>
             <div class="home-box">
                 <h2 class="title">Nơi nào cần tăng hiệu quả công việc, ở đó cần có AI</h2>
+                <img src="image/H2.jpg">
                 <p class="description"> AI - Trí tuệ nhân tạo là công nghệ hiện đại,
                      có khả năng tổng hợp, phân tích dữ liệu, ngữ cảnh giúp người quản lý rút ngắn thời gian làm việc,
                       tăng độ chính xác trong các quyết định quản lý cần phân tích dữ liệu 
@@ -108,13 +110,13 @@
             </div>
             <div class="home-box">
                 <h2 class="title">SiChain</h2>
+                <img src="image/H3.jpg">
                 <p class="description"> SiChain kiến tạo sự kết nối giữa BlockChain và AI để giúp doanh nghiệp 
                     bảo vệ và khai thác giá trị của dữ liệu tích luỹ trong suốt quá trình phát triển doanh nghiệp 
                 </p>
             </div>
         </div>
     </div>
-    -->
     <div class="parent">
         <div class="section" id="about"><!-- Phần About-->
             <div class="section-box left">
