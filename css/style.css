@@ -1,0 +1,271 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none !important;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+:root{
+    --size-Site:1200px;
+    --color-mau1:rgb(17, 184, 255);
+    --color-mau2:rgb(255, 190, 37);
+    --color-mau3:rgb(43, 42, 42);
+}
+.parent{
+    width:100%;
+    background:rgb(255, 255, 255);
+}
+.line-border{
+    height:5px;
+    width:60px;
+    margin:30px auto;
+    background:var(--color-mau2);
+}
+.fixed{
+    position:fixed;
+    background:var(--color-mau1);
+    box-shadow:0px 0px 8px 0px rgb(107, 107, 107);
+    transition: 2s;
+}
+/*========================================Header========================================*/
+header{
+    background:rgb(255, 255, 255);
+    width:100%;
+    position:fixed;
+    top:0;
+    z-index: 1001;
+}
+nav{
+    width:var(--size-Site);
+    margin:auto;
+    display:flex;
+    padding:20px 0px;
+}
+.logo{
+    width:30%;
+    display:flex;
+}
+.logo img{
+    width:18%;
+    height:auto;
+}
+.logo h1{
+    line-height:48px;
+    font-size: 34px;
+    padding-left:10px;
+    margin:0;
+    color:var( --color-mau1);
+}
+.categories{
+    width:70%;
+}
+.categories ul{
+    list-style: none;
+    text-align: end;
+    margin:0;
+}
+.categories ul li{
+    display:inline;
+    padding:10px 5px;
+    text-transform: uppercase;
+    line-height:48px;
+    font-family:'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    color:var(--color-mau3);
+}
+.fixed li, .fixed h1{
+    color:white !important;
+}
+.categories ul a:hover li{
+    color:var(--color-mau2);
+    border-bottom:3px solid var(--color-mau2);
+    transition:0.2s;
+}
+.fixed a:hover li{    
+    border-bottom:3px solid white !important;
+}
+/*===================================== Home ===========================================*/
+.carousel{    
+    margin-top:90px;
+}
+.carousel-caption{
+    background:rgba(0, 0, 0, 0.58);
+    padding:2px 30px;
+    margin-bottom:32px;
+}
+.content{
+    width:100%;
+    min-height:300px;
+    background-image: url("../image/background.jpg");
+    background-size:100%;
+}
+.home{
+    width:var(--size-Site);
+    margin:auto;
+    padding:100px 0px;
+    display:flex;
+}
+.home-box{    
+    box-shadow: rgb(255, 255, 255) 0px 0px 6px 0px;
+    padding:30px;
+    margin:20px;
+    text-align: justify;
+}
+.title{
+    text-align: center;   
+    color:white; 
+    padding-bottom:25px;
+    font-size:20px;
+}
+.description{
+    color:white;
+    width:100%;
+    justify-content: center;
+}
+/*================================= Phần About ==================================*/
+.section{
+    width:var(--size-Site);
+    margin:auto;
+    display:flex;
+    flex-wrap: wrap;
+    padding:20px 10px;
+    justify-content: center;
+}
+.section-box{
+    width:50%;
+    padding:20px;
+    text-align: justify;
+}
+.title-page{
+    text-transform: uppercase;
+    color:var(--color-mau1);
+    padding-bottom:30px;
+    font-size: 30px;
+}
+.left{
+    padding-right:20px;
+}
+.right{
+    padding-left:20px;
+}
+.section-box img{
+    width:100%;
+}
+/*================================== phần sứ mệnh ===================================*/
+.bg-color{
+    background:rgb(222, 242, 248);
+}
+.detail{
+    padding:20px 0px;
+}
+.title-center{
+    text-align: center;
+}
+/*====================================== team ==================================*/
+.bg-team{
+    background-image: url("../image/teambg.png");
+    padding-bottom:40px;
+}
+.member{
+    width:23%;
+    border:1px solid rgb(220, 220, 220);
+    padding:10px;
+    margin:15px;
+}
+.member img{
+    width:100%;
+}
+.member h6{
+    text-align: center;
+    padding-top:15px;
+    color:rgb(255, 255, 255);
+}
+.our-team{
+    text-align: center;
+    color:rgb(255, 255, 255);
+    text-transform: uppercase;
+    padding-bottom:30px;
+    font-size: 30px;
+    padding-top:50px;
+}
+/*======================== Đào tạo ===========================*/
+.ChuongTrinhDaoTao{
+    padding-bottom:30px;
+}
+/*============================ contact ==========================*/
+.contact-us{
+    padding-top:40px;
+}
+.button-send{
+    background-color: var(--color-mau1);
+    padding:5px 10px;
+    border:none;
+    color:white;
+    border-radius: 3px;
+}
+.icon{
+    color:rgb(177, 115, 0);
+}
+.icon img{
+    width:40px;
+}
+/*=========================== footer ==========================*/
+footer{
+    background:var(--color-mau1);
+    padding:40px 0px;
+    margin-top:40px;
+}
+.footer-left{
+    width:30%;
+}
+.footer-left img{
+    width:110px;
+}
+.footer-right{
+    width:70%;
+    text-align: right;
+}
+.footer-right h3{
+    text-transform: uppercase;
+}
+.copyright{
+    padding-top:20px;
+    margin-bottom:-40px;
+    color:white;
+    font-style:italic;
+}
+/*======================== phần animation =========================*/
+.box-hidden{
+    visibility: hidden;
+}
+.box-show{
+    animation-name: muotma;
+    -webkit-animation-name: muotma;
+    animation-duration: 1s;
+    -webkit-animation-duration: 1s;
+    visibility: visible;
+}
+@keyframes muotma{
+    from{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
+@-webkit-keyframes muotma{
+    from{
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
+}
